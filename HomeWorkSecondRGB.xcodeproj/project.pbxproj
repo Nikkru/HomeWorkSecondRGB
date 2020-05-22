@@ -56,9 +56,9 @@
 		2E4AF2862478232200DDF913 /* HomeWorkSecondRGB */ = {
 			isa = PBXGroup;
 			children = (
+				2E4AF28B2478232200DDF913 /* ViewController.swift */,
 				2E4AF2872478232200DDF913 /* AppDelegate.swift */,
 				2E4AF2892478232200DDF913 /* SceneDelegate.swift */,
-				2E4AF28B2478232200DDF913 /* ViewController.swift */,
 				2E4AF28D2478232200DDF913 /* Main.storyboard */,
 				2E4AF2902478232500DDF913 /* Assets.xcassets */,
 				2E4AF2922478232500DDF913 /* LaunchScreen.storyboard */,
