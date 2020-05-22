@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIKit HomeWork 2.2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rd-7Y-KZh">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIKit HomeWork 2.2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7rd-7Y-KZh">
                                 <rect key="frame" x="16" y="427.5" width="382" height="41"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -31,9 +31,9 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7rd-7Y-KZh" secondAttribute="trailing" constant="16" id="AZi-yN-r1Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="7rd-7Y-KZh" secondAttribute="trailing" constant="16" id="AZi-yN-r1Q"/>
                             <constraint firstItem="7rd-7Y-KZh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="AnK-Vn-n7n"/>
-                            <constraint firstItem="7rd-7Y-KZh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="KG3-mB-rDj"/>
+                            <constraint firstItem="7rd-7Y-KZh" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="KG3-mB-rDj"/>
                             <constraint firstItem="WEE-a5-DNm" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="RkU-pY-UUh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WEE-a5-DNm" secondAttribute="bottom" constant="16" id="gqo-14-mHJ"/>
                             <constraint firstItem="7rd-7Y-KZh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ncc-f3-zgO"/>
