@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         
         // rgbView
         rgbView.layer.cornerRadius = 10
-        rgbView.backgroundColor = UIColor.black
+        rgbView.backgroundColor = .black
         
         // slider
         redSlider.minimumTrackTintColor = .red
@@ -32,11 +32,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func sliderAction(_ sender: UISlider) {
-        redLabel.text = NSString(format: "%.2f", redSlider.value) as String
-        blueLabel.text = NSString(format: "%.2f", blueSlider.value) as String
-        greenLabel.text = NSString(format: "%.2f", greenSlider.value) as String
+        redLabel.text = String(format: "%.2f", redSlider.value)
+        blueLabel.text = String(format: "%.2f", blueSlider.value)
+        greenLabel.text = String(format: "%.2f", greenSlider.value)
         
-        rgbView.backgroundColor = UIColor.init(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
+        rgbView.backgroundColor = UIColor.init(red: CGFloat(redSlider.value),
+                                               green: CGFloat(greenSlider.value),
+                                               blue: CGFloat(blueSlider.value),
+                                               alpha: 1)
     }
 }
 
