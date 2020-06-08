@@ -10,7 +10,10 @@ import UIKit
 
 class RedactorRGBViewController: UIViewController {
     
+    var background: UIColor?
+    
     @IBOutlet weak var rgbView: UIView!
+    @IBOutlet var mainView: UIView!
     
     @IBOutlet weak var redLabel: UILabel!
     @IBOutlet weak var blueLabel: UILabel!
@@ -25,7 +28,13 @@ class RedactorRGBViewController: UIViewController {
         
         // rgbView
         rgbView.layer.cornerRadius = 10
-        rgbView.backgroundColor = .black
+//        guard let fon = background else {
+//            return
+//        }
+        
+        guard let fon = background else { return }
+       rgbView.backgroundColor = fon
+        mainView.backgroundColor = fon
         
         // slider
         redSlider.minimumTrackTintColor = .red
@@ -34,7 +43,13 @@ class RedactorRGBViewController: UIViewController {
         setColor()
         setValue(for: redLabel, greenLabel, blueLabel)
     }
+    //передача данных обратно
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        background = rgbView.backgroundColor
+    }
     
+    @IBAction func backButton(_ sender: UIButton) {
+    }
     @IBAction func sliderAction(_ sender: UISlider) {
         switch sender {
         case redSlider: redLabel.text = string(from: sender)
